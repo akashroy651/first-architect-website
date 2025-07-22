@@ -196,15 +196,29 @@ width: 100%;
   filter: grayscale(100%);
 }
 
+/* footer related styles */
+footer{
+  width: 1440px;
+  margin: 130px auto;
+  text-align: center;
+  background-color: #FFF4E7;
+  border-radius: 8px;
+  padding: 38px;
+}
+.footer-text{
+  font-size: 20px;
+  font-weight: 400;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
    .navbar, .nav-links, .features, .teams{
     flex-direction: column;
    }
    .team-img-container, .facts-container, .sponsor-companies{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
    }
-   .facts-container, .sponsor-companies{
+   .facts-container{
     justify-content: center;
     gap: 24px;
    }
@@ -218,6 +232,16 @@ width: 100%;
    #experience-badge{
     margin-left: 20px;
     margin-top: 20px;
+   }
+   footer{
+    width: 100%;
+      padding-left: 5px;
+      /* justify-content: center; */
+      margin: 5px;
+      font-size: 20px;
+   }
+   .footer-text{
+    font-size: 10px;
    }
 
 }
